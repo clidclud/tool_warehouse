@@ -1,7 +1,7 @@
 services:
   web:
     build: .
-    container_name: warehouse_tool
+    container_name: tool_warehouse
     command: gunicorn core.wsgi:application --bind 0.0.0.0:8002
     ports:
       - "8002:8002"
