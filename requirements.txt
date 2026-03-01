@@ -1,0 +1,9 @@
+django
+djangorestframework
+django-cors-headers
+django-import-export
+whitenoise
+pandas
+openpyxl
+gunicorn==23.0.0
+python-dotenv==1.0.0

@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Django
+db.sqlite3
+/media/
+/static/
+
+# Vue
+/node_modules/
+/dist/
+npm-debug.log
+
+# IDE
+.vscode/
+.idea/
