@@ -11,4 +11,4 @@ RUN python manage.py collectstatic --noinput
 
 EXPOSE 8002
 
-CMD ["gunicorn", "--bind", "0.0.0.0:8002", "tool_warehouse.wsgi:application"]
+CMD ["gunicorn", "core.wsgi:application", "--bind", "0.0.0.0:8002", "--timeout", "120", "--workers", "3"]

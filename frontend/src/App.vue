@@ -109,7 +109,7 @@ export default {
     const items = ref([])
     const editingId = ref(null)
     const searchQuery = ref('')
-    const apiUrl = 'http://127.0.0.1:8000/api/'
+    const apiUrl = '/api/'
     
     // Форма
     const form = reactive({
