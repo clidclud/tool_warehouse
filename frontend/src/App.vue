@@ -23,7 +23,7 @@
               v-model="form.unit" 
               type="text" 
               required
-              placeholder="шт, кг, м и т.д."
+              placeholder="шт"
               maxlength="10"
             >
           </div>
@@ -33,9 +33,9 @@
             <input 
               v-model="form.quantity" 
               type="number" 
-              step="0.01" 
+              step="1" 
               required
-              placeholder="0.00"
+              placeholder="0"
             >
           </div>
           
