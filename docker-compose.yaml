@@ -2,7 +2,7 @@ services:
   web:
     build: .
     container_name: tool_warehouse
-    command: sh -c "python manage.py migrate && gunicorn core.wsgi:application --bind 0.0.0.0:8002"
+    command: sh -c "python manage.py migrate && gunicorn core.wsgi:application --bind 0.0.0.0:8002 --workers 3 --timeout 120"
     ports:
       - "8002:8002"
     volumes:
